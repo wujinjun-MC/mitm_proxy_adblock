@@ -25,7 +25,9 @@
                 - 使用MITMproxy运行此脚本，HTML内嵌的两个censorship在到达浏览器之前已经被移除，不会被执行，功能恢复正常
             - **轻量级**：相比其他下载器（如 `qwqqaq0/XJTLU_Past_Paper_Downloader`），本脚本仅针对单个需求优化。
                 - 虽然有 [qwqqaq0/XJTLU_Past_Paper_Downloader](https://github.com/qwqqaq0/XJTLU_Past_Paper_Downloader) 这类实现，但是我只想下载一两个试卷，不想要overhead
-        - Disclaimer: This tool is for reference and learning purposes only. 文档内有明文水印 (可以通过Acrobat之类工具删掉) 和隐水印 (每次打开时得到的PDF文件的校验和不同)，如果你违反规定分发版权内容，你会被盯上。
+        - Disclaimer:
+            - This tool is for reference and learning purposes only. 文档内有明文水印 (可以通过Acrobat之类工具删掉) 和隐水印 (每次打开时得到的PDF文件的校验和不同)，如果你违反规定分发版权内容，你会被盯上。
+            - Also see [this](https://github.com/kevinlasnh/xjtlu-final-paper-pdf-downloader#%EF%B8%8F-%E9%87%8D%E8%A6%81%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%9D%A1%E6%AC%BE).
         - Base:
             - simple-adblock-remove-embed-js.py
 - cn.bing.com
