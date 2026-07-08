@@ -28,6 +28,8 @@
         - Disclaimer:
             - This tool is for reference and learning purposes only. 文档内有明文水印 (可以通过Acrobat之类工具删掉) 和隐水印 (每次打开时得到的PDF文件的校验和不同)，如果你违反规定分发版权内容，你会被盯上。
             - Also see [this](https://github.com/kevinlasnh/xjtlu-final-paper-pdf-downloader#%EF%B8%8F-%E9%87%8D%E8%A6%81%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%9D%A1%E6%AC%BE).
+        - Alternative:
+            - [Adguard 规则 (HTML filtering rules)](https://github.com/wujinjun-MC/adguard-rules/raw/refs/heads/main/adblock-generic.txt)
         - Base:
             - simple-adblock-remove-embed-js.py
 - cn.bing.com
