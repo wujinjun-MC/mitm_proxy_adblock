@@ -13,25 +13,26 @@
 ## ✨ 特性与支持场景
 
 支持的网站列表:
-- etd.xjtlu.edu.cn
-    - [fuck-ad-xjtlu-etd-paper-cannot-dl.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/etd.xjtlu.edu.cn/fuck-ad-xjtlu-etd-paper-cannot-dl.py)
-        - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/etd.xjtlu.edu.cn/fuck-ad-xjtlu-etd-paper-cannot-dl.py)
-        - XJTLU Electronic Theses and Dissertations (ETD) system 试卷查阅可下载。
-        - **💡 为什么需要此脚本？**
-            - **原生失效**：新版 PDF 阅读器无下载按钮，且无法通过 CTRL+S 保存。浏览器已加载 HTML 并执行内嵌脚本，F12 无法阻止。
-                - 原来的PDF阅读器有下载按钮，或按下CTRL+S即可下载，但是新版无法下载，并且有anticheat脚本内嵌在HTML中，无法按下CTRL+S保存或CTRL+P打印，手动选择打印显示白屏
-                - 内嵌脚本使用 Adblock/Adguard/Tampermonkey 等工具移除无效，因为浏览器接收到后已经执行，即使使用F12开发人员工具也无法恢复
-            - **MITMproxy 优势**：在请求到达浏览器前拦截并移除恶意 JS，无需浏览器插件
-                - 使用MITMproxy运行此脚本，HTML内嵌的两个censorship在到达浏览器之前已经被移除，不会被执行，功能恢复正常
-            - **轻量级**：相比其他下载器（如 `qwqqaq0/XJTLU_Past_Paper_Downloader`），本脚本仅针对单个需求优化。
-                - 虽然有 [qwqqaq0/XJTLU_Past_Paper_Downloader](https://github.com/qwqqaq0/XJTLU_Past_Paper_Downloader) 这类实现，但是我只想下载一两个试卷，不想要overhead
-        - Disclaimer:
-            - This tool is for reference and learning purposes only. 文档内有明文水印 (可以通过Acrobat之类工具删掉) 和隐水印 (每次打开时得到的PDF文件的校验和不同)，如果你违反规定分发版权内容，你会被盯上。
-            - Also see [this](https://github.com/kevinlasnh/xjtlu-final-paper-pdf-downloader#%EF%B8%8F-%E9%87%8D%E8%A6%81%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%9D%A1%E6%AC%BE).
-        - Alternative:
-            - [Adguard 规则 (HTML filtering rules)](https://github.com/wujinjun-MC/adguard-rules/raw/refs/heads/main/adblock-generic.txt)
-        - Base:
-            - simple-adblock-remove-embed-js.py
+- xjtlu.edu.cn
+    - etd.xjtlu.edu.cn
+        - [fuck-ad-xjtlu-etd-paper-cannot-dl.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/etd.xjtlu.edu.cn/fuck-ad-xjtlu-etd-paper-cannot-dl.py)
+            - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/etd.xjtlu.edu.cn/fuck-ad-xjtlu-etd-paper-cannot-dl.py)
+            - XJTLU Electronic Theses and Dissertations (ETD) system 试卷查阅可下载。
+            - **💡 为什么需要此脚本？**
+                - **原生失效**：新版 PDF 阅读器无下载按钮，且无法通过 CTRL+S 保存。浏览器已加载 HTML 并执行内嵌脚本，F12 无法阻止。
+                    - 原来的PDF阅读器有下载按钮，或按下CTRL+S即可下载，但是新版无法下载，并且有anticheat脚本内嵌在HTML中，无法按下CTRL+S保存或CTRL+P打印，手动选择打印显示白屏
+                    - 内嵌脚本使用 Adblock/Adguard/Tampermonkey 等工具移除无效，因为浏览器接收到后已经执行，即使使用F12开发人员工具也无法恢复
+                - **MITMproxy 优势**：在请求到达浏览器前拦截并移除恶意 JS，无需浏览器插件
+                    - 使用MITMproxy运行此脚本，HTML内嵌的两个censorship在到达浏览器之前已经被移除，不会被执行，功能恢复正常
+                - **轻量级**：相比其他下载器（如 `qwqqaq0/XJTLU_Past_Paper_Downloader`），本脚本仅针对单个需求优化。
+                    - 虽然有 [qwqqaq0/XJTLU_Past_Paper_Downloader](https://github.com/qwqqaq0/XJTLU_Past_Paper_Downloader) 这类实现，但是我只想下载一两个试卷，不想要overhead
+            - Disclaimer:
+                - This tool is for reference and learning purposes only. 文档内有明文水印 (可以通过Acrobat之类工具删掉) 和隐水印 (每次打开时得到的PDF文件的校验和不同)，如果你违反规定分发版权内容，你会被盯上。
+                - Also see [this](https://github.com/kevinlasnh/xjtlu-final-paper-pdf-downloader#%EF%B8%8F-%E9%87%8D%E8%A6%81%E6%B3%95%E5%BE%8B%E5%A3%B0%E6%98%8E%E4%B8%8E%E4%BD%BF%E7%94%A8%E6%9D%A1%E6%AC%BE).
+            - Alternative:
+                - [Adguard 规则 (HTML filtering rules)](https://github.com/wujinjun-MC/adguard-rules/raw/refs/heads/main/adblock-generic.txt)
+            - Base:
+                - simple-adblock-remove-embed-js.py
 - cn.bing.com
     - **TODO**
 - [templates]
