@@ -49,8 +49,9 @@
 ### 1. 启动 MITMproxy
 根据您的需求配置监听端口（示例使用 `8080`）：
 ```bash
-mitmproxy --mode socks5 --listen-port 8080 -s <path_to_script> -s <path_to_another_script>
+mitmproxy --listen-port 8080 -s <path_to_script> -s <path_to_another_script>
 ```
+Socks5: 添加 `--mode socks5`
 
 ### 2. 配置代理
 确保 **服务器监听端口** 与 **系统代理端口** 一致（示例统一使用 8080，若使用 1080/7890/7897/... 请修改命令中的端口号）。
@@ -58,7 +59,7 @@ mitmproxy --mode socks5 --listen-port 8080 -s <path_to_script> -s <path_to_anoth
 | 操作系统 | 配置方法 |
 | :--- | :--- |
 | **Windows** | 控制面板 → Internet 选项 → 连接 → 局域网(LAN)设置 → 局域网设置 → 打勾 "为 LAN 设置代理服务器 ..." → 地址填入 `http://127.0.0.1`，端口填入 `8080` |
-| **Linux** | 设置环境变量：`export HTTP_PROXY=http://127.0.0.1:7897 HTTPS_PROXY=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 https_proxy=http://127.0.0.1:7897` 并运行程序 |
+| **Linux** | 设置环境变量：`export HTTP_PROXY=http://127.0.0.1:8080 HTTPS_PROXY=http://127.0.0.1:8080 http_proxy=http://127.0.0.1:8080 https_proxy=http://127.0.0.1:8080` 并运行程序 |
 | **浏览器** | 参考各浏览器设置方法，在代理中填入 `http://127.0.0.1:8080` |
 
 ## License
