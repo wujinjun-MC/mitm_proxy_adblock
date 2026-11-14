@@ -40,6 +40,16 @@
         - 模板: 去掉包含广告的内嵌脚本。普通广告拦截插件 (Adblock, Adguard等等) 或油猴脚本难以拦截，因为已经在处理前执行了，使用此脚本，即可在响应到达浏览器之前移除这类脚本
         - Used in:
             - fuck-ad-xjtlu-etd-paper-cannot-dl.py
+    - [simple-image-save.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/templates/simple-image-save.py)
+        - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/templates/simple-image-save.py)
+        - 模板: 保存所有图片: 对目标域名后缀，文件后缀/MIME类型/URL路径匹配时
+        - Used in:
+            - TODO
+    - [simple-ua-replace.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/templates/simple-ua-replace.py)
+        - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/templates/simple-ua-replace.py)
+        - 模板: 匹配域名后缀，更改请求User Agent
+        - Used in:
+            - xjtlu-uim-rs-break.py
 
 ## 🚀 如何开始 (How to Use)
 ### 前置准备
