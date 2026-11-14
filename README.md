@@ -49,7 +49,7 @@
 ### 1. 启动 MITMproxy
 根据您的需求配置监听端口（示例使用 `8080`）：
 ```bash
-mitmproxy --listen-port 8080 -s <path_to_script>
+mitmproxy --mode socks5 --listen-port 8080 -s <path_to_script> -s <path_to_another_script>
 ```
 
 ### 2. 配置代理
