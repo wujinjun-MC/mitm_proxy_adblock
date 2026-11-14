@@ -113,10 +113,26 @@ Socks5: 添加 `--mode socks5`
 6. 
 
 ## Credits
-\-
+- XJTLU UIM "User Agent trick": https://github.com/LYJW131/xjtlu-uim-login#%E5%8F%91%E7%8E%B0%E6%8C%89-ua-%E5%88%86%E6%B5%81%E4%B8%8D%E6%98%AF%E7%BA%AF%E7%AE%97-vm
 
 ## 推荐使用
+
+**✅ XJTLU自动登录系列**:
 1. [西浦自动登录](https://greasyfork.org/zh-CN/scripts/484105/): 自动登录LearningMall Core、UIM、sso、mail、eBridge、IDP
-2. [XJTLU box 自动登录](https://greasyfork.org/zh-CN/scripts/550860): 自动登录box
-3. [XJTLU xpcyjgy 自动登录](https://greasyfork.org/zh-CN/scripts/551035): XJTLU(TC)线上自助服务自动登录
-4. [XJTLU UIM 自动登录 (请求用户名+密码+OTP)](https://greasyfork.org/zh-CN/scripts/550518): XJTLU UIM 自动登录增强版，自动完成辅助验证，无需手动输入验证码/OTP
+    - Fork: [西浦自动登录-fork-wujinjun](https://openuserjs.org/scripts/wujinjun/%E8%A5%BF%E6%B5%A6%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95-fork-wujinjun): 支持更多登录 (例如 netauth) ，活跃更新，轻松配置
+2. [XJTLU box 自动登录](https://openuserjs.org/scripts/wujinjun/XJTLU_box_%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95): 自动登录box，并自动勾选 `7天内保持登录`
+3. [XJTLU UIM 自动登录 (请求用户名+密码+OTP)](https://openuserjs.org/scripts/wujinjun/XJTLU_UIM_%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95_(%E8%AF%B7%E6%B1%82%E7%94%A8%E6%88%B7%E5%90%8D%2B%E5%AF%86%E7%A0%81%2BOTP)): UIM自动登录(自动完成二次验证)
+4. [XJTLU xpcyjgy 自动登录](https://openuserjs.org/scripts/wujinjun/XJTLU_xpcyjgy_%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95): XJTLU(TC)线上自助服务自动登录
+
+**😊 XJTLU体验提升 (QoL)**:
+1. [XJTLU AMS Sign-in Code 优化](https://openuserjs.org/scripts/wujinjun/XJTLU_AMS_Sign-in_Code_%E4%BC%98%E5%8C%96)
+2. [XJTLU utalk 不要欢迎视频](https://openuserjs.org/scripts/wujinjun/XJTLU_utalk_%E4%B8%8D%E8%A6%81%E6%AC%A2%E8%BF%8E%E8%A7%86%E9%A2%91)
+3. [XJTLU utalk 调整 (专为低性能设备优化)](https://openuserjs.org/scripts/wujinjun/XJTLU_utalk_tweaks_(Low-End_Device_Optimizer))
+4. [XJTLU eBridge 登录过期自动重新登录](https://openuserjs.org/scripts/wujinjun/XJTLU_eBridge_%E7%99%BB%E5%BD%95%E8%BF%87%E6%9C%9F%E8%87%AA%E5%8A%A8%E9%87%8D%E6%96%B0%E7%99%BB%E5%BD%95)
+5. [XJTLU eBridge 考试信息提示弹窗拦截](https://openuserjs.org/scripts/wujinjun/XJTLU_eBridge_%E8%80%83%E8%AF%95%E4%BF%A1%E6%81%AF%E6%8F%90%E7%A4%BA%E5%BC%B9%E7%AA%97%E6%8B%A6%E6%88%AA)
+
+**其他自动登录系列**:
+1. [UnoAnalyzer 优诺 自动登录](https://openuserjs.org/scripts/wujinjun/UnoAnalyzer_%E4%BC%98%E8%AF%BA_%E8%87%AA%E5%8A%A8%E7%99%BB%E5%BD%95): 如题
+
+**其他体验提升**:
+1. [UnoAnalyzer 优诺 登录状态保存](https://openuserjs.org/scripts/wujinjun/UnoAnalyzer_%E4%BC%98%E8%AF%BA_%E7%99%BB%E5%BD%95%E7%8A%B6%E6%80%81%E4%BF%9D%E5%AD%98): 持久化优诺登录状态，新窗口打开优诺无需重复登录，关闭浏览器不再丢失登录状态
