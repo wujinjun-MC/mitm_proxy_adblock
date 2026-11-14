@@ -6,9 +6,9 @@
 [![Last Updated](https://img.shields.io/badge/last%20updated-2026-brightgreen.svg)](https://github.com/wujinjun-MC/mitm_proxy_adblock)
 
 ## 📖 简介
-本仓库提供用于配合 **MITMproxy** 运行的 Python 拦截脚本。
+本仓库提供用于配合 **MITMproxy** 运行的 Python 脚本。
 
-**核心用途**：拦截和移除已注入到客户端浏览器但无法通过常规插件（如 Adblock, Tampermonkey）清除的内嵌恶意脚本（广告、扰人弹窗、白屏逻辑等）。
+**核心用途**：拦截和移除已注入到客户端浏览器但无法通过常规插件（如 Adblock, Tampermonkey）清除的内嵌恶意脚本（广告、扰人弹窗、白屏逻辑等）；在数据包层面优化使用体验；小工具
 
 ## ✨ 特性与支持场景
 
@@ -33,6 +33,31 @@
                 - [Adguard 规则 (HTML filtering rules)](https://github.com/wujinjun-MC/adguard-rules/raw/refs/heads/main/adblock-generic.txt)
             - Base:
                 - simple-adblock-remove-embed-js.py
+    - uim.xjtlu.edu.cn
+        - [xjtlu-uim-rs-break.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/uim.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+            - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/uim.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+            - 我不要闭源WAF代码运行! 我不是机器人!
+            - Tags: [XJTLU] [UIM] [TimeTablePlus] [PESelection] [WAF] [rs] [Ruishu] [Bot] [Devtools] [debugger]
+            - **💡 为什么需要此脚本？**
+                - **省流**：跳过后请求不再包含长串参数，不再自动生成长串Cookie，减少上行流量消耗 (避免被识别为PCDN封宽带)
+                    - 已存在的随机Cookie垃圾不会自动清除，请手动清除
+                - **MITMproxy 优势**：在请求到达端点前拦截并奇异化UA，无需浏览器插件
+                - **轻量级**：相比融合实现（如 `LYJW131/xjtlu-uim-login`），本脚本仅针对单个需求优化。
+                    - 我不需要自动化，只想要日常放心使用
+            - Disclaimer:
+                - *from LYJW131/xjtlu-uim-login*
+                    > 本项目仅用于个人账号~~自动化~~，请遵守学校规定。
+            - Base:
+                - simple-ua-replace.py
+    - sso.xjtlu.edu.cn
+        - [xjtlu-uim-rs-break.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/sso.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+            - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/sso.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+    - timetableplus.xjtlu.edu.cn
+        - [xjtlu-uim-rs-break.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/timetableplus.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+            - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/timetableplus.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+    - peselection.xjtlu.edu.cn
+        - [xjtlu-uim-rs-break.py](https://github.com/wujinjun-MC/mitm_proxy_adblock/raw/refs/heads/main/scripts/by-site/xjtlu.edu.cn/peselection.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
+            - [View code](https://github.com/wujinjun-MC/mitm_proxy_adblock/blob/main/scripts/by-site/xjtlu.edu.cn/peselection.xjtlu.edu.cn/xjtlu-uim-rs-break.py)
 - cn.bing.com
     - **TODO**
 - [templates]
@@ -84,7 +109,8 @@ Socks5: 添加 `--mode socks5`
 2. 数据损失： 在任何情况下，因使用或不能使用本软件所导致的任何直接、间接、偶然、特殊或连带的损失（包括但不限于利润损失、商业中断、数据丢失等），本软件及开发者不承担任何赔偿责任。
 3. 第三方服务： 本软件可能包含指向第三方网站或服务的链接。对于第三方提供的服务或内容，本软件不承担任何审查、保证或赔偿责任。
 4. 不可抗力： 因黑客攻击、电脑病毒侵入、政府管制、电信部门技术调整等不可抗力导致的服务中断或数据丢失，本软件不承担任何法律责任。
-5. ...
+5. 使用环境限制: 本软件的设计和运行机制是基于客户端代理拦截。因此，其作用域仅限于您的本地设备和您传输的网络数据流，无法对服务器的内部系统、数据库或后台逻辑进行直接修改或管理。
+6. 
 
 ## Credits
 \-
